@@ -1,0 +1,19 @@
+pkgbase = dolphin-waveform-git
+	pkgdesc = KIO thumbnailer that renders audio album art with a waveform for Dolphin
+	pkgver = 0
+	pkgrel = 1
+	url = https://github.com/iGerman00/dolphin-waveform
+	arch = x86_64
+	license = GPL-3.0-only
+	makedepends = cmake
+	makedepends = extra-cmake-modules
+	makedepends = git
+	makedepends = kcoreaddons
+	depends = ffmpeg
+	depends = kcolorscheme
+	depends = kio
+	depends = qt6-base
+	source = git+https://github.com/iGerman00/dolphin-waveform.git
+	b2sums = SKIP
+
+pkgname = dolphin-waveform-git

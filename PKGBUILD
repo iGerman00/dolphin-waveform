@@ -1,13 +1,13 @@
-# Maintainer: iGerman00
+# Maintainer: iGerman00 <igerman at igerman dot cc>
 pkgname=dolphin-waveform-git
 pkgver=0
 pkgrel=1
 pkgdesc='KIO thumbnailer that renders audio album art with a waveform for Dolphin'
 arch=('x86_64')
 url='https://github.com/iGerman00/dolphin-waveform'
-license=('GPL-2.0-or-later')
+license=('GPL-3.0-only')
 depends=('ffmpeg' 'kcolorscheme' 'kio' 'qt6-base')
-makedepends=('cmake' 'git')
+makedepends=('cmake' 'extra-cmake-modules' 'git' 'kcoreaddons')
 source=("git+$url.git")
 b2sums=('SKIP')
 
@@ -28,4 +28,6 @@ build() {
 
 package() {
     DESTDIR="$pkgdir" cmake --install build
+    install -Dm644 "$srcdir/$_srcname/LICENSE" \
+        "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
