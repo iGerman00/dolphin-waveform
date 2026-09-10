@@ -45,3 +45,7 @@ The waveform is a static image regenerated for each preview request. The native 
 - Qt 6.11.2
 - Linux kernel 7.2.3-arch1-2 (64-bit)
 - Wayland
+
+## AI Disclosure
+
+Mostly vibe-coded / agent generated with human review
