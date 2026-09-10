@@ -1,0 +1,37 @@
+[Layout]
+# Physical pixels at the requested thumbnail scale.
+padding=16
+waveformHeight=72
+waveformLeftInset=32
+waveformRightInset=16
+separatorHeight=8
+cornerRadius=16
+minimumPreviewWidth=129
+# Keep artwork/background square; set false for a full-width frame.
+artBackgroundSquareOnly=true
+# fit preserves the entire image; cover fills the frame and crops overflow.
+imageMode=fit
+
+[Colors]
+# Values may be hex colors or KDE scheme tokens such as:
+# view.normalText, window.normalBackground, button.hoverColor,
+# selection.normalBackground, tooltip.inactiveText, complementary.midShade,
+# header.activeBackground, and accent (the current KDE selection accent).
+background=transparent
+artBackground=view.midShade
+waveform=accent
+separator=view.midShade
+# Defines what the "accent" alias resolves to. Omit this to use KDE's
+# current selection accent, or set a hex color/KDE scheme token.
+accent=selection.normalBackground
+# Any color can also be: transparent.
+
+[Waveform]
+# More bins produce finer bars but take more space. 1024 is the tuned default.
+bins=1024
+# Audio samples combined into each analysis peak.
+samplesPerPeak=2048
+# 1.0 is linear; values below 1 emphasize quieter audio.
+exponent=1.0
+minBarHeight=2
+barGap=0

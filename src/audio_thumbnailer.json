@@ -1,0 +1,11 @@
+{
+    "CacheThumbnail": false,
+    "ThumbnailerVersion": 4,
+    "KPlugin": {
+        "Name": "Audio Waveform",
+        "Description": "Album artwork with an audio waveform",
+        "MimeTypes": [
+            "audio/*"
+        ]
+    }
+}
